@@ -1,7 +1,7 @@
 # Create MySQL Server
 resource "azurerm_mysql_server" "team2" {
   resource_group_name = azurerm_resource_group.team2.name
-  name                ="team2sql-whynot2"                  #"team2sql-${(random_string.fqdn.result)}" <--use this to make it dynamic 
+  name                ="team2sql"                  #"team2sql-${(random_string.fqdn.result)}" <--use this to make it dynamic 
   location            = azurerm_resource_group.team2.location
   version             = "5.7"
 
