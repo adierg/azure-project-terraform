@@ -8,10 +8,10 @@ sudo wget https://wordpress.org/latest.tar.gz
 sudo tar -xf latest.tar.gz -C /var/www/html/
 sudo mv /var/www/html/wordpress/* /var/www/html/
 sudo cp /var/www/html/wp-config-sample.php  /var/www/html/wp-config.php 
-sudo sed 's/database_name_here/db-wordpress/g' /var/www/html/wp-config.php -i
-sudo sed 's/username_here/wordpress@team2sql-whynot2/g' /var/www/html/wp-config.php -i
+sudo sed 's/database_name_here/db-team2sql/g' /var/www/html/wp-config.php -i
+sudo sed 's/username_here/wordpress@team2sql/g' /var/www/html/wp-config.php -i
 sudo sed 's/password_here/W0rdpr3ss@p4ss/g' /var/www/html/wp-config.php -i
-sudo sed 's/localhost/team2sql-whynot2.mysql.database.azure.com/g' /var/www/html/wp-config.php -i
+sudo sed 's/localhost/team2sql.mysql.database.azure.com/g' /var/www/html/wp-config.php -i
 #DBNAME="db-wordpress"
 sudo getenforce
 sudo sed 's/SELINUX=permissive/SELINUX=enforcing/g' /etc/sysconfig/selinux -i
